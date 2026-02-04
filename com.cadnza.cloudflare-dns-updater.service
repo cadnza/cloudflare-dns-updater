@@ -1,12 +1,12 @@
 [Unit]
 Description="Updates a Cloudflare record (ideal for dynamic DNS)"
-Documentation="https://www.github.com/cadnza/cloudflareDNSupdater.git"
+Documentation="https://www.github.com/cadnza/cloudflare-dns-updater.git"
 Wants=network-online.target
 After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/etc/systemd/system/com.cadnza.cloudflareDNSupdater.service.d/main.sh
+ExecStart=/etc/systemd/system/com.cadnza.cloudflare-dns-updater.service.d/main.sh
 Restart=always
 RestartSec=60
 

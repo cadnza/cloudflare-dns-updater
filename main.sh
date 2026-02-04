@@ -24,7 +24,7 @@ which jq &> /dev/null || {
 }
 
 # Create data folder
-dirData=/etc/com.cadnza.cloudflareDNSupdater
+dirData=/etc/com.cadnza.cloudflare-dns-updater
 [ -d $dirData ] || mkdir $dirData
 
 # Get IP
